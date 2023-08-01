@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 
-import 'package:instagram_project/login.dart';
+import 'package:instagram_project/posts_page.dart';
+import 'package:instagram_project/res/colors.dart';
 
-import 'homepage.dart';
-import 'notification.dart';
-import 'password.dart';
-import 'signup.dart';
+import 'login_page.dart';
+import 'notification_page.dart';
+import 'password_page.dart';
+import 'signup_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         home: Test(),
         routes: {
-          "notification": (context) =>const Notif(),
+          "notification": (context) => const Notif(),
           "homepage": (context) => Test(),
           "password": (context) => Password(),
           "signin": (context) => const Signin(),
@@ -28,7 +29,7 @@ class MyApp extends StatelessWidget {
         },
         theme: ThemeData(
             textTheme: const TextTheme(
-          bodySmall: TextStyle(color: Colors.white, fontSize: 20),
+          bodySmall: TextStyle(color: WHITE, fontSize: 20),
         )));
   }
 }
